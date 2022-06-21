@@ -1,5 +1,6 @@
 import java.util.Scanner;
-//Todo: timeout해결하기
+// Todo: timeout해결하기
+// 해결하기 위해 dynamic programming사용 -> 100개의 test case중 1개 통과
 
 public class SWEA_5688 {
 
@@ -8,22 +9,26 @@ public class SWEA_5688 {
         int T;
         T = sc.nextInt();
 
+        // 세제곱한 값 저장
+        long[] cubic = new long[1000000];
+        for (int i = 1; i <= 1000000; i++) {
+            cubic[i - 1] = i * i * i;
+        }
+
         for (int test_case = 1; test_case <= T; test_case++) {
             long N;
             N = sc.nextLong();
 
-            int i = 1;
-            while (true) {
-                if (i * i * i == N) { // 세제곱근인 경우
-                    System.out.println(String.format("#%d %d", test_case, i));
+            // 값 비교
+            for(int i=0;i<cubic.length;i++){
+                if(cubic[i]==N){
+                    System.out.println(String.format("#%d %d", test_case, i+1));
                     break;
-                } else if (i * i * i < N) {
-                    i++;
-                } else {
+                }
+                else if(cubic[i] > N){
                     System.out.println(String.format("#%d -1", test_case));
                     break;
                 }
-
             }
 
         }
