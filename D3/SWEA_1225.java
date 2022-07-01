@@ -3,6 +3,13 @@
     https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV14uWl6AF0CFAYD&categoryId=AV14uWl6AF0CFAYD&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1
     
     이번 문제를 통해 얻은 것은 없는데, 문제 조건이 명확했으면 좋았을 문제 (test_case == 10)
+    
+    < comment >
+    queue 선언 : Queue<Integer> q = new LinkedList<>();
+    enqueue : q.add(value)
+    dequeue : q.poll()
+    을 통해 조금 더 쉽게 구현 가능
+    
  */
 
 import java.util.Scanner;
