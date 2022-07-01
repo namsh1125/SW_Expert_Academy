@@ -2,8 +2,13 @@
     SW Expert Academy 2805. 농작물 수확하기
     https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV7GLXqKAWYDFAXB&categoryId=AV7GLXqKAWYDFAXB&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1
     
-    < comment >
     String을 한 글자씩 분리해 int형으로 전환하는 방법에 대해 알 수 있었던 문제
+    
+    < comment >
+    위아래 삼각형을 따로 값을 구할 수도 있고,
+    start, end 값을 저장해 중간값보다 작은 경우 1부터 2씩 증가하고 중간값보다 큰 경우 2씩 감소해 구할 수 있다.
+    time complexity는 같다.
+    
  */
 
 import java.util.Scanner;
