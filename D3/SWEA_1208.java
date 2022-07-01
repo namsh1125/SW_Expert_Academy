@@ -1,7 +1,10 @@
 /*
     SW Expert Academy 1208. [S/W 문제해결 기본] 1일차 - Flatten
     https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=3&contestProbId=AV139KOaABgCFAYh&categoryId=AV139KOaABgCFAYh&categoryType=CODE&problemTitle=&orderBy=INQUERY_COUNT&selectCodeLang=ALL&select-1=3&pageSize=10&pageIndex=1
-    이번 문제를 통해 얻은 게 없음.
+
+    < comment >
+    array.sort()를 이용해 정렬을 진행하고 array[0]++, array[99]-- 진행하여 풀 수도 있는 문제
+    다만 array.sort()의 time complexity는 O(n log(n))으로 본인 코드에 비해 깔끔하게 작성할 수 있으나, 복잡도가 높아지는 단점이 있다.
  */
 
 import java.util.Scanner;
